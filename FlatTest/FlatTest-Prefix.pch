@@ -14,3 +14,6 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define SharedDataManager [DataManager sharedInstance]
+#define VK_TOKEN_KEY @"vk_token_key"

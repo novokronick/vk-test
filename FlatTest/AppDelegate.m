@@ -7,12 +7,31 @@
 //
 
 #import "AppDelegate.h"
+#import "DataManager.h"
+
+#import "PostItem+Data.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    SharedDataManager;
+    
+    //[PostItem MR_deleteAllMatchingPredicate:nil];
+    
+    NSLog(@"post count: %u", [PostItem MR_countOfEntities]);
+    
     // Override point for customization after application launch.
+    
+    //[SharedDataManager setVkToken:nil];
+    
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    [VKSdk processOpenURL:url fromApplication:annotation];
+    
     return YES;
 }
 							

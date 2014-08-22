@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="ImageItem" representedClassName="ImageItem" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="imageId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="linkSmall" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="thePost" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PostItem" inverseName="images" inverseEntity="PostItem" syncable="YES"/>
+    </entity>
+    <entity name="PostItem" representedClassName="PostItem" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="postId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ImageItem" inverseName="thePost" inverseEntity="ImageItem" syncable="YES"/>
+        <relationship name="theUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserItem" inverseName="posts" inverseEntity="UserItem" syncable="YES"/>
+    </entity>
+    <entity name="UserItem" representedClassName="UserItem" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PostItem" inverseName="theUser" inverseEntity="PostItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ImageItem" positionX="-216" positionY="-72" width="128" height="103"/>
+        <element name="PostItem" positionX="-407" positionY="-126" width="128" height="118"/>
+        <element name="UserItem" positionX="-587" positionY="-117" width="128" height="103"/>
+    </elements>
+</model>
