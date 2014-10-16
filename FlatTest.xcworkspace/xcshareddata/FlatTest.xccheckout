@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EDEEC488-ED9E-4A69-B5A5-970F3296BF7B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FlatTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0808DB1AFC17030910821670AEF2EF52F8E8CCF4</key>
+		<string>https://github.com/novokronick/FlatTest.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FlatTest.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0808DB1AFC17030910821670AEF2EF52F8E8CCF4</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/novokronick/FlatTest.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0808DB1AFC17030910821670AEF2EF52F8E8CCF4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0808DB1AFC17030910821670AEF2EF52F8E8CCF4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FlatTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>

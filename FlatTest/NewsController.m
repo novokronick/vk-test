@@ -48,6 +48,8 @@
     [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
     [self.tableView addSubview:refreshControl];
     
+//    [refreshControl beginRefreshing];
+    
     // bottom load more
     __weak NewsController *weakSelf = self;
     
